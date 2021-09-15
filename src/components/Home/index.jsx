@@ -10,7 +10,7 @@ export default function Home() {
         </h1>
         <p>para la construcción y particulares</p>
 
-       <a href=" https://api.whatsapp.com/send?phone=[arg]][+541151842587]" target="_blank" className={homeStyles.logo}> ¡HABLEMOS! <img src={logo} /> </a>
+       <a href=" https://api.whatsapp.com/send?phone=[541151842587]" target="_blank" className={homeStyles.logo}> ¡HABLEMOS! <img src={logo} /> </a>
       </section>
     </main> 
   );
