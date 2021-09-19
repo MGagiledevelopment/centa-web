@@ -1,6 +1,6 @@
 import React from "react";
 import navbarStyles from "../Navbar/navbar.module.css"
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav>
@@ -26,10 +26,10 @@ export default function Navbar() {
         </label>
 
         <div className={navbarStyles.menu}>
-            <div className={navbarStyles.menuitems}>INICIO</div>
+         <Link to="/"> <div className={navbarStyles.menuitems}>INICIO</div> </Link>
             <div className={navbarStyles.menuitems}>SERVICIO</div>
             <div className={navbarStyles.menuitems}>GALERIA</div>
-            <div className={navbarStyles.menuitems}>CONTACTO</div>
+            <Link to="/contacto"><div className={navbarStyles.menuitems}>CONTACTO</div></Link>
         </div>
       </div>
 
