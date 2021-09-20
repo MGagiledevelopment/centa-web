@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 nav{
     width:100%;
-    position: fixed;
+    /* position: fixed; */
     z-index: 10;
    }
 

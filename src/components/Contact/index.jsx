@@ -1,16 +1,39 @@
-import React from "react"
+import React from "react";
+import contactStyles from "../Contact/contact.module.css";
+import image from "../../images/contacto.jpeg";
 
-export default function Contact (){
-return (
-    <section class="contacto" id="href-contacto">
-    <h6>Contactate con nosotros</h6>
-    <span>
-    <span><i class="fab fa-whatsapp"></i>  <a href="#"> 11-5015-4607</a> </span>
-    <span><i class="fab fa-whatsapp"></i>  <a href="#">11-5184-2587</a> </span>
-    </span>
-    <span><i class="fas fa-phone"></i>  <a href="#">4687-3064</a> </span>
-    <span><i class="far fa-envelope"></i>  volquetescenta@gmail.com</span>
-    <span><i class="fas fa-map-marker-alt"></i>  Av. Coronel Cardenas 2070, C.A.B.A</span>
-  </section>
-)
+export default function Contact() {
+  return (
+    <section className={contactStyles.contacto}>
+      <div className={contactStyles.image}>
+        <h6>Contacto</h6>
+      </div>
+    <div className={contactStyles.titlebox}>
+      <h6 className={contactStyles.title}>NUESTROS DATOS</h6>
+      <div className={contactStyles.line}></div>
+      </div>
+      <div className={contactStyles.datos}>
+        <div className={contactStyles.datosbox}>
+          <span>Teléfonos</span>
+          <span><i class="fas fa-phone-alt"></i>4687-3064</span>
+        </div>
+
+        <div className={contactStyles.datosbox}>
+          <span>Whatsapp</span>
+          <span><i class="fab fa-whatsapp"></i>11-5015-4607</span>
+          <span><i class="fab fa-whatsapp"></i> 11-5184-2587</span>
+        </div>
+
+        <div className={contactStyles.datosbox}>
+          <span>Email</span>
+          <span><i class="fas fa-envelope"></i>volquetescenta@gmail.com</span>
+        </div>
+
+        <div className={contactStyles.datosbox}>
+          <span>Dirección</span>
+          <span><i class="fas fa-compass"></i>Av.Coronel Cárdenas(entre Bragado y Tapalqué), C.A.B.A</span>
+        </div>
+      </div>
+    </section>
+  );
 }
