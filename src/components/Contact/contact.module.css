@@ -62,7 +62,7 @@
 
 .datosbox :nth-child(1){
   letter-spacing: 0.3rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   margin-bottom: 2rem;
   font-weight: bolder;
  
@@ -75,4 +75,8 @@ letter-spacing: 0.1rem;
 .datosbox :nth-child(3){
   font-weight: 300;
   letter-spacing: 0.1rem;
+}
+
+i{
+  color:rgba(81, 166, 129);
 }

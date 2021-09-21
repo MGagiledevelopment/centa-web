@@ -1,6 +1,6 @@
 import React from "react";
 import contactStyles from "../Contact/contact.module.css";
-import image from "../../images/contacto.jpeg";
+import icon from "../../images/telephone.png"
 
 export default function Contact() {
   return (
@@ -15,7 +15,7 @@ export default function Contact() {
       <div className={contactStyles.datos}>
         <div className={contactStyles.datosbox}>
           <span>Teléfonos</span>
-          <span><i class="fas fa-phone-alt"></i>4687-3064</span>
+          <span>4687-3064</span>
         </div>
 
         <div className={contactStyles.datosbox}>
@@ -31,7 +31,7 @@ export default function Contact() {
 
         <div className={contactStyles.datosbox}>
           <span>Dirección</span>
-          <span><i class="fas fa-compass"></i>Av.Coronel Cárdenas(entre Bragado y Tapalqué), C.A.B.A</span>
+          <span><i class="far fa-compass"></i>Av.Coronel Cárdenas (entre Bragado y Tapalqué), C.A.B.A</span>
         </div>
       </div>
     </section>
