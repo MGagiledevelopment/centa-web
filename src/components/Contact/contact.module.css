@@ -10,7 +10,7 @@
   color: white;
   font-size: 4rem;
   height: 30rem;
-  background-image: url(../../images/contacto.jpeg);
+  background-image: url(../../images/construccion.jpg);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin:3rem;
+  margin-top:6rem;
 }
 
 .title{
@@ -56,7 +56,7 @@
   justify-content: center;
   /* border:1px solid blue; */
   font-size: 1.6rem;
-  height: 20rem;
+  height: 18rem;
   width: 30rem;
 }
 
