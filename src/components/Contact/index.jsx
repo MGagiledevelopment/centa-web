@@ -15,7 +15,8 @@ export default function Contact() {
       <div className={contactStyles.datos}>
         <div className={contactStyles.datosbox}>
           <span>Teléfonos</span>
-          <span>4687-3064</span>
+          <span><i class="fas fa-phone"></i>4687-3064</span>
+          
         </div>
 
         <div className={contactStyles.datosbox}>
