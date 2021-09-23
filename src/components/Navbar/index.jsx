@@ -48,19 +48,25 @@ export default function Navbar() {
             <button onClick={handleoption} className={navbarStyles.menuitems}>
               INICIO
             </button>{" "}
-          </Link>
+          </Link >
+          <Link to="/nosotros">
           <button onClick={handleoption} className={navbarStyles.menuitems}>
             NOSOTROS
           </button>
+          </Link>
           <Link to="/contacto">
             {" "}
             <button onClick={handleoption} className={navbarStyles.menuitems}>
               SERVICIO
             </button>{" "}
           </Link>
+
+          <Link to="/nosotros">
           <button onClick={handleoption} className={navbarStyles.menuitems}>
             GALERIA
           </button>
+
+          </Link>
           <Link to="/contacto">
             <button onClick={handleoption} className={navbarStyles.menuitems}>
               CONTACTO
