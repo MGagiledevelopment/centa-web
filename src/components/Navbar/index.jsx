@@ -10,53 +10,79 @@ export default function Navbar() {
   const handleMenu = () => {
     setMenu(!menu);
   };
-  console.log(menu)
+  console.log(menu);
 
-  const handleoption = () =>{
-    setMenu(false)
-  }
+  const handleoption = () => {
+    setMenu(false);
+  };
 
   return (
     <nav>
-    <div className={navbarStyles.menumobile}>
-      <div className={navbarStyles.logo}>
-       <a href="/"> <p>
-          VOLQUETES <span>CENTA</span>
-        </p></a>
-      </div>
+      <div className={navbarStyles.menutop}>
 
-      {/* <input
+        <div className={navbarStyles.logo}>
+          <a href="/">
+            {" "}
+            <p>
+              VOLQUETES <span>CENTA</span>
+            </p>
+          </a>
+        </div>
+
+        {/* <input
         type="checkbox"
         id="cuadrado-checkbox"
         className={navbarStyles.cuadradocheckbox}
       /> */}
+<div className={navbarStyles.menumobile}>
+        <button className={navbarStyles.burger} onClick={handleMenu}>
+          {" "}
+          <i class="fas fa-bars"></i>{" "}
+        </button>
+
+        <div
+          className={`${menu ? navbarStyles.open : ""} ${navbarStyles.close}`}
+        >
+          <Link to="/">
+            {" "}
+            <button onClick={handleoption} className={navbarStyles.menuitems}>
+              INICIO
+            </button>{" "}
+          </Link>
+          <button onClick={handleoption} className={navbarStyles.menuitems}>
+            NOSOTROS
+          </button>
+          <Link to="/contacto">
+            {" "}
+            <button onClick={handleoption} className={navbarStyles.menuitems}>
+              SERVICIO
+            </button>{" "}
+          </Link>
+          <button onClick={handleoption} className={navbarStyles.menuitems}>
+            GALERIA
+          </button>
+          <Link to="/contacto">
+            <button onClick={handleoption} className={navbarStyles.menuitems}>
+              CONTACTO
+            </button>
+          </Link>
+        </div>
+      </div>
+
+
+      <div class={navbarStyles.menudesktop}>
+        <ul>
+        <Link to="/nosotros"> <li>NOSOTROS</li> </Link>
+          <Link to="/contacto"> <li>SERVICIO</li> </Link>
+          <Link to="/">  <li>GALERIA</li> </Link>
+          <Link to="/contacto"> <li>CONTACTO</li></Link>
+        </ul>
+      </div>
+      
+</div>
+
 
       
-       <button className={navbarStyles.burger} onClick={handleMenu}> <i class="fas fa-bars"></i> </button>
-    
-
-      <div className={`${ menu ? navbarStyles.open :"" } ${navbarStyles.close}`}>
-       <Link to="/"> <button onClick={handleoption} className={navbarStyles.menuitems}>INICIO</button> </Link>
-          <button onClick={handleoption} className={navbarStyles.menuitems}>NOSOTROS</button>
-          <button onClick={handleoption} className={navbarStyles.menuitems}>SERVICIO</button>
-          <button onClick={handleoption} className={navbarStyles.menuitems}>GALERIA</button>
-          <Link to="/contacto"><button onClick={handleoption} className={navbarStyles.menuitems}>CONTACTO</button></Link>
-      </div>
-    </div>
-
-    {/* <div class={navbarStyles.menudesktop}>
-      <div id="logo">
-        <p>
-          VOLQUETES <span>CENTA</span>
-        </p>
-      </div>
-      <ul>
-        <li>NOSOTROS</li>
-        <li>SERVICIO</li>
-        <li>GALERIA</li>
-        <li>CONTACTO</li>
-      </ul>
-    </div> */}
-  </nav>
+    </nav>
   );
 }

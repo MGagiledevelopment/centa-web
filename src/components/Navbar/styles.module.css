@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap");
 nav {
   width: 100%;
   z-index: 10;
@@ -14,7 +15,10 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
+.burger:hover{
+    cursor: pointer;
+    border: 0.1rem solid rgba(255, 255, 255, 0.228);
+}
 nav i {
   font-size: 2.5rem;
   width: 3.5rem;
@@ -28,7 +32,7 @@ nav i {
   letter-spacing: 0.1rem;
 }
 
-.menumobile {
+.menutop {
   height: 6.11rem;
   display: flex;
   justify-content: space-between;
@@ -87,4 +91,35 @@ a,
 a:active {
   color: white;
   text-decoration: none;
+}
+.menudesktop{
+    display:none;
+}
+
+
+@media  screen and (min-width: 800px){
+    .menumobile{
+        display:none;
+    }
+    .menudesktop {
+        display: inline-block;
+    }
+    .menudesktop ul{
+        font-family: "Roboto", sans-serif;
+        display:flex;
+        list-style: none;
+        font-size: 1.4rem;
+    }
+    .menudesktop li{
+        text-align: center;
+        /* border:1px solid red; */
+        /* width:20rem; */
+        padding:3.5rem;
+        color:white;
+    }
+    .menudesktop li:hover{
+        transition: all 0.3s ease;
+        color: #283c42;
+    }
+
 }
