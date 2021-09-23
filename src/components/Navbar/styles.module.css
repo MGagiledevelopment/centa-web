@@ -48,7 +48,6 @@ nav i {
   left: 0;
   top: 6rem;
   width: 100%;
-  height: 40rem;
   transform: translatey(-170%);
   transition: all 1s ease;
   font-family: "IBM Plex Mono", monospace;
@@ -63,10 +62,13 @@ nav i {
 .close.open {
   position: absolute;
   width: 100%;
+  height: 44rem;
   transform: translatey(0%);
+  border-bottom: 0.1rem solid white;
 }
 
 .menuitems {
+    width:15rem;
     color:white;
     background-color: transparent;
     border-style: none;;
@@ -76,10 +78,9 @@ nav i {
   text-align: center;
 }
 .menuitems:hover {
-    
+    transition: all 0.3s ease;
   color: #283c42;
-  opacity: 80%;
-  border-bottom: 0.5rem solid #283c42;
+ 
 }
 
 a,

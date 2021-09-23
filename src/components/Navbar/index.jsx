@@ -20,9 +20,9 @@ export default function Navbar() {
     <nav>
     <div className={navbarStyles.menumobile}>
       <div className={navbarStyles.logo}>
-        <p>
+       <a href="/"> <p>
           VOLQUETES <span>CENTA</span>
-        </p>
+        </p></a>
       </div>
 
       {/* <input
@@ -37,6 +37,7 @@ export default function Navbar() {
 
       <div className={`${ menu ? navbarStyles.open :"" } ${navbarStyles.close}`}>
        <Link to="/"> <button onClick={handleoption} className={navbarStyles.menuitems}>INICIO</button> </Link>
+          <button onClick={handleoption} className={navbarStyles.menuitems}>NOSOTROS</button>
           <button onClick={handleoption} className={navbarStyles.menuitems}>SERVICIO</button>
           <button onClick={handleoption} className={navbarStyles.menuitems}>GALERIA</button>
           <Link to="/contacto"><button onClick={handleoption} className={navbarStyles.menuitems}>CONTACTO</button></Link>
