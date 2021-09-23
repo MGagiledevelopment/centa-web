@@ -5,10 +5,11 @@
     flex-direction: column;
     justify-content: center;
     font-family: "Roboto", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
 height: 80vh;
 }
 
 .aboutus :nth-child(1){
     margin-bottom: 2rem;
 }
+
