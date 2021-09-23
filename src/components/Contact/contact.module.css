@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
-.contacto{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap");
+.contacto {
   font-family: "Roboto", sans-serif;
 }
 .image {
@@ -18,68 +18,65 @@
   background-color: rgba(81, 166, 129, 0.25);
 }
 
-.datos{
+.datos {
   /* border:1px solid red; */
   margin-top: 1rem;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-.titlebox{
+.titlebox {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top:6rem;
+  margin-top: 6rem;
 }
 
-.title{
+.title {
   font-size: 1.7rem;
   text-align: center;
   letter-spacing: 0.3rem;
- 
 }
-.line{
+.line {
   border-bottom: 0.6rem solid green;
   height: 1rem;
-  width:4rem;
-  margin:0.5rem;
+  width: 4rem;
+  margin: 0.5rem;
 }
 
-.datosbox{
-  display:flex;
+.datosbox {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* border:1px solid blue; */
+  border: 1px solid blue;
   font-size: 1.6rem;
   height: 18rem;
   width: 30rem;
 }
 
-.datosbox :nth-child(1){
+.datosbox :nth-child(1) {
   letter-spacing: 0.3rem;
   /* text-decoration: underline; */
   margin-bottom: 2rem;
   font-weight: bolder;
   text-align: center;
- 
 }
 
-.datosbox :nth-child(2){
-font-weight: 300;
-letter-spacing: 0.1rem;
-text-align: center;
+.datosbox :nth-child(2) {
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-align: center;
 }
-.datosbox :nth-child(3){
+.datosbox :nth-child(3) {
   font-weight: 300;
   letter-spacing: 0.1rem;
   text-align: center;
 }
 
-i{
-  color:rgba(81, 166, 129);
+i {
+  color: rgba(81, 166, 129);
 }
-

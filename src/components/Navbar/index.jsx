@@ -1,51 +1,61 @@
-import React from "react";
-import navbarStyles from "../Navbar/navbar.module.css"
+import React, { useContext } from "react";
+import navbarStyles from "../Navbar/styles.module.css";
+import menulogo from "../../images/menu.svg";
 import { Link } from "react-router-dom";
+import { AppContext } from "../../context/appContext";
+
 export default function Navbar() {
+  const { menu, setMenu } = useContext(AppContext);
+
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+  console.log(menu)
+
+  const handleoption = () =>{
+    setMenu(false)
+  }
+
   return (
     <nav>
-      <div className={navbarStyles.menumobile}>
-        <div className={navbarStyles.logo}>
-          <p>
-            VOLQUETES <span>CENTA</span>
-          </p>
-        </div>
-
-        <input
-          type="checkbox"
-          id="cuadrado-checkbox"
-          className={navbarStyles.cuadradocheckbox}
-        />
-
-        <label className={navbarStyles.labelhamburguesa} for="cuadrado-checkbox">
-          <div className={navbarStyles.containerhamburguesa}>
-            <div className={`${navbarStyles.linea} ${navbarStyles.lineatop}`}></div>
-            <div className={`${navbarStyles.linea} ${navbarStyles.lineamed}`}></div>
-            <div className={`${navbarStyles.linea} ${navbarStyles.lineabottom}`}></div>
-          </div>
-        </label>
-
-        <div className={navbarStyles.menu}>
-         <Link to="/"> <div className={navbarStyles.menuitems}>INICIO</div> </Link>
-            <div className={navbarStyles.menuitems}>SERVICIO</div>
-            <div className={navbarStyles.menuitems}>GALERIA</div>
-            <Link to="/contacto"><div className={navbarStyles.menuitems}>CONTACTO</div></Link>
-        </div>
+    <div className={navbarStyles.menumobile}>
+      <div className={navbarStyles.logo}>
+        <p>
+          VOLQUETES <span>CENTA</span>
+        </p>
       </div>
 
-      {/* <div class={navbarStyles.menudesktop}>
-        <div id="logo">
-          <p>
-            VOLQUETES <span>CENTA</span>
-          </p>
-        </div>
-        <ul>
-          <li>NOSOTROS</li>
-          <li>SERVICIO</li>
-          <li>GALERIA</li>
-          <li>CONTACTO</li>
-        </ul>
-      </div> */}
-    </nav>
+      {/* <input
+        type="checkbox"
+        id="cuadrado-checkbox"
+        className={navbarStyles.cuadradocheckbox}
+      /> */}
+
+      
+       <button className={navbarStyles.burger} onClick={handleMenu}> <i class="fas fa-bars"></i> </button>
+    
+
+      <div className={`${ menu ? navbarStyles.open :"" } ${navbarStyles.close}`}>
+       <Link to="/"> <button onClick={handleoption} className={navbarStyles.menuitems}>INICIO</button> </Link>
+          <button onClick={handleoption} className={navbarStyles.menuitems}>SERVICIO</button>
+          <button onClick={handleoption} className={navbarStyles.menuitems}>GALERIA</button>
+          <Link to="/contacto"><button onClick={handleoption} className={navbarStyles.menuitems}>CONTACTO</button></Link>
+      </div>
+    </div>
+
+    {/* <div class={navbarStyles.menudesktop}>
+      <div id="logo">
+        <p>
+          VOLQUETES <span>CENTA</span>
+        </p>
+      </div>
+      <ul>
+        <li>NOSOTROS</li>
+        <li>SERVICIO</li>
+        <li>GALERIA</li>
+        <li>CONTACTO</li>
+      </ul>
+    </div> */}
+  </nav>
   );
 }
