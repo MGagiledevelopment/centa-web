@@ -61,7 +61,7 @@ export default function Navbar() {
             </button>{" "}
           </Link>
 
-          <Link to="/nosotros">
+          <Link to="/proximamente">
           <button onClick={handleoption} className={navbarStyles.menuitems}>
             GALERIA
           </button>

@@ -4,6 +4,7 @@ import Home from "../../components/Home"
 import Contact from "../../components/Contact"
 import AboutUs from "../../components/AboutUs"
 import NotFound from "../../components/Notfound"
+import proximamente from "../../components/proximamente/prox"
 
 export default function Main(){
     return (<div>
@@ -11,6 +12,7 @@ export default function Main(){
         <Route component={Home} exact path="/"></Route>
         <Route component={Contact} path="/contacto"></Route>
         <Route component={AboutUs} path="/nosotros"></Route>
+        <Route component={proximamente} path="/proximamente"></Route>
         <Route component={NotFound} path="*"></Route>
         </Switch>
     </div>)
