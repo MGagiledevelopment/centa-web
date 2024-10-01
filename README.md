@@ -1,4 +1,4 @@
 # Centa-web 
-Aplicación web para Empresa de Volquetes.
+Site built in webflow, using JS,HTML and CSS
 
-👨🏽‍ 💻 --> https://www.centavolquetes.com
+👨🏽‍ 💻 --> Check it out   https://www.centavolquetes.com
